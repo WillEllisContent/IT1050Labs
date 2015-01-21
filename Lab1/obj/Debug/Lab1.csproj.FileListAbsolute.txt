@@ -1,0 +1,6 @@
+C:\Users\s01066367\Desktop\WEllisLabs\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\s01066367\Desktop\WEllisLabs\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+C:\Users\s01066367\Desktop\WEllisLabs\Lab1\bin\Debug\Lab1.exe
+C:\Users\s01066367\Desktop\WEllisLabs\Lab1\bin\Debug\Lab1.pdb
+C:\Users\s01066367\Desktop\WEllisLabs\Lab1\obj\Debug\Lab1.exe
+C:\Users\s01066367\Desktop\WEllisLabs\Lab1\obj\Debug\Lab1.pdb
