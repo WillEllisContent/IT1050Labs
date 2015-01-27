@@ -12,18 +12,18 @@ namespace Lab1B
         {
             Console.WriteLine("What is your first name?"); // prompt user for first name
             string firstName = Console.ReadLine(); 
-            //Console.WriteLine("What is your middle initial?"); //prompt user for middle initial
-            char middleInitial = 'M';
+            Console.WriteLine("What is your middle initial?"); //prompt user for middle initial
+            char middleInitial = Console.ReadKey().KeyChar;
             Console.WriteLine("What is your last name?"); //prompt user for last name
             string lastName = Console.ReadLine();
             string fullName = firstName + " " + middleInitial + ". " + lastName;
-
+            
             Console.WriteLine("How old are you?"); //prompt user for age
-            int age = Console.Read();
+            int age = int.Parse(Console.ReadLine());
             Console.WriteLine("How many feet tall are you?"); //prompt user for height in feet
-            int heightFeet = Console.Read();
+            int heightFeet = int.Parse(Console.ReadLine());
             Console.WriteLine("How many inches?"); //prompt user for inches
-            int heightInches = Console.Read();
+            double heightInches = double.Parse(Console.ReadLine());
             double totalHeightCM = ((heightFeet * 12) + heightInches) * 2.54;
 
             bool isCitizen = true;

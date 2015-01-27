@@ -3,3 +3,4 @@ P:\school\IT1050Labs\Lab1B\bin\Debug\Lab1B.exe
 P:\school\IT1050Labs\Lab1B\bin\Debug\Lab1B.pdb
 P:\school\IT1050Labs\Lab1B\obj\Debug\Lab1B.exe
 P:\school\IT1050Labs\Lab1B\obj\Debug\Lab1B.pdb
+P:\school\IT1050Labs\Lab1B\obj\Debug\Lab1B.csprojResolveAssemblyReference.cache
