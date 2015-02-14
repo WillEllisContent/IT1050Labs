@@ -1,0 +1,5 @@
+P:\school\IT1050Labs\Lab2\Lab2 Persons and Pets\Lab2 Persons and Pets\bin\Debug\Lab2 Persons and Pets.exe.config
+P:\school\IT1050Labs\Lab2\Lab2 Persons and Pets\Lab2 Persons and Pets\bin\Debug\Lab2 Persons and Pets.exe
+P:\school\IT1050Labs\Lab2\Lab2 Persons and Pets\Lab2 Persons and Pets\bin\Debug\Lab2 Persons and Pets.pdb
+P:\school\IT1050Labs\Lab2\Lab2 Persons and Pets\Lab2 Persons and Pets\obj\Debug\Lab2 Persons and Pets.exe
+P:\school\IT1050Labs\Lab2\Lab2 Persons and Pets\Lab2 Persons and Pets\obj\Debug\Lab2 Persons and Pets.pdb
