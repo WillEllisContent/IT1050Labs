@@ -1,0 +1,6 @@
+P:\school\IT1050Labs\Lab3\MovieNight\MovieNight\bin\Debug\MovieNight.exe.config
+P:\school\IT1050Labs\Lab3\MovieNight\MovieNight\obj\Debug\MovieNight.csprojResolveAssemblyReference.cache
+P:\school\IT1050Labs\Lab3\MovieNight\MovieNight\bin\Debug\MovieNight.exe
+P:\school\IT1050Labs\Lab3\MovieNight\MovieNight\bin\Debug\MovieNight.pdb
+P:\school\IT1050Labs\Lab3\MovieNight\MovieNight\obj\Debug\MovieNight.exe
+P:\school\IT1050Labs\Lab3\MovieNight\MovieNight\obj\Debug\MovieNight.pdb
