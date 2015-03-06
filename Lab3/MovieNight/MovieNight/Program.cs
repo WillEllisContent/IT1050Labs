@@ -8,46 +8,108 @@ namespace MovieNight
 {
     class Program
     {
-        static void Main(string[] args)
+
+       static void Main(string[] args)
         {
-            Console.Write("Are you going to a Matinee or an Evening show?");
-            string MovieType = Console.ReadLine();
+            // need to declare certain variables here //
+            int FreePopcorn = 0;
+            int FreeCandy = 0;
+            double TotalTicketPrice = 0;
+            
+            Console.WriteLine("Are you going to a Matinee or an Evening show?");
+            Console.WriteLine("1. Matinee");
+            Console.WriteLine("2. Evening");
+
+            Console.WriteLine("Press 1 or 2");
+            int MovieType = int.Parse(Console.ReadLine());
 
             Console.WriteLine();
+
 
             Console.WriteLine("You selected " + MovieType + ".");
             Console.WriteLine();
 
             Console.Write("How many full-price adults?");
-            double Adults = double.Parse(Console.ReadLine());
+            int Adults = int.Parse(Console.ReadLine());
 
             Console.Write("How many children?");
-            double Children = double.Parse(Console.ReadLine());
+            int Children = int.Parse(Console.ReadLine());
 
             Console.Write("How many senior citizens?");
-            double Seniors = double.Parse(Console.ReadLine());
+            int Seniors = int.Parse(Console.ReadLine());
+            int TotalNumberTickets = Adults + Children + Seniors;
 
-            if (MovieType == "Matinee")
+
+            if (MovieType == 1)
             {
                 double AdultsTickets = Adults * 5.99;
                 double ChildrenTickets = Children * 3.99;
                 double SeniorsTickets = Seniors * 4.50;
-                double TotalTicketPrice = AdultsTickets + ChildrenTickets + SeniorsTickets;
+                TotalTicketPrice = AdultsTickets + ChildrenTickets + SeniorsTickets;
                 Console.WriteLine("Your total ticket price is $" + TotalTicketPrice);
-                Console.ReadLine();
+                if (TotalNumberTickets >= 3) ;
+                {
+                    Console.WriteLine("You get a free popcorn!");
+                }
             }
-            else if (MovieType == "Evening")
+            else if (MovieType == 2)
             {
                 double AdultsTickets = Adults * 10.99;
                 double ChildrenTickets = Children * 6.99;
                 double SeniorsTickets = Seniors * 8.50;
-                double TotalTicketPrice = AdultsTickets + ChildrenTickets + SeniorsTickets;
+                TotalTicketPrice = AdultsTickets + ChildrenTickets + SeniorsTickets;
                 Console.WriteLine("Your total ticket price is $" + TotalTicketPrice);
-                Console.ReadLine();
+                if (TotalNumberTickets >= 3) ;
+                {
+                    Console.WriteLine("You get a free popcorn!");
+                }
+
             }
 
+                
+                
+
+            //Now for the Snacks//
+                Console.WriteLine();
+                Console.WriteLine("Snacks Menu:");
+                Console.WriteLine("Small Soda $3.50");
+                Console.WriteLine("Large Soda $5.99");
+                Console.WriteLine("Hot Dog $3.99");
+                Console.WriteLine("Popcorn $4.50");
+                Console.WriteLine("Candy $1.99 - buy 3, get 1 free");
+                Console.WriteLine();
+
+                Console.WriteLine("How many small sodas?");
+                int SmallSoda = int.Parse(Console.ReadLine());
+                Console.WriteLine("How many large sodas?");
+                int LargeSoda = int.Parse(Console.ReadLine());
+                Console.WriteLine("How many hot dogs?");
+                int HotDog = int.Parse(Console.ReadLine());
+                Console.WriteLine("How many popcorns?");
+                int Popcorn = int.Parse(Console.ReadLine());
+                Console.WriteLine("How many packs of candy?");
+                int Candy = int.Parse(Console.ReadLine());
+
+// buy 3 candy get 1 free //
+             
+
+                double SmallSodaPrice = SmallSoda * 3.5;
+                double LargeSodaPrice = LargeSoda * 5.99;
+                double HotDogPrice = HotDog * 3.99;
+                double PopcornPrice = Popcorn * 4.5;
+                double CandyPrice = Candy * 1.99;
+
+                double TotalSnackPrice = SmallSodaPrice + LargeSodaPrice + HotDogPrice + PopcornPrice + CandyPrice;
+
+                Console.WriteLine("Your total snack price is $" + TotalSnackPrice + ".");
+
+                double TotalPrice = TotalSnackPrice + TotalTicketPrice;
+                Console.WriteLine("Your total for the trip to the movies is $" + TotalPrice + ".");
+                Console.ReadLine();
 
 
-        }   
+
+       }   
     }
 }
+
