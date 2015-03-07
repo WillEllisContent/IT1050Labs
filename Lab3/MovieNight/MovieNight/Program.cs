@@ -12,9 +12,9 @@ namespace MovieNight
        static void Main(string[] args)
         {
             // need to declare certain variables here //
-            double AdultsTickets = 0.00;
-            double ChildrenTickets = 0.00;
-            double SeniorsTickets = 0.00;
+            double AdultsTicketsPrice = 0.00;
+            double ChildrenTicketsPrice = 0.00;
+            double SeniorsTicketsPrice = 0.00;
             int FreePopcorn = 0;
             int FreeCandy = 0;
             int FreeCandyTotal = 0;
@@ -45,18 +45,18 @@ namespace MovieNight
 
             if (MovieType == 1)
             {
-                AdultsTickets = Adults * 5.99;
-                ChildrenTickets = Children * 3.99;
-                SeniorsTickets = Seniors * 4.50;
-                TotalTicketPrice = AdultsTickets + ChildrenTickets + SeniorsTickets;
+                AdultsTicketsPrice = Adults * 5.99;
+                ChildrenTicketsPrice = Children * 3.99;
+                SeniorsTicketsPrice = Seniors * 4.50;
+                TotalTicketPrice = AdultsTicketsPrice + ChildrenTicketsPrice + SeniorsTicketsPrice;
                 Console.WriteLine("Your total ticket price is $" + TotalTicketPrice);
             }
             else if (MovieType == 2)
             {
-                AdultsTickets = Adults * 10.99;
-                ChildrenTickets = Children * 6.99;
-                SeniorsTickets = Seniors * 8.50;
-                TotalTicketPrice = AdultsTickets + ChildrenTickets + SeniorsTickets;
+                AdultsTicketsPrice = Adults * 10.99;
+                ChildrenTicketsPrice = Children * 6.99;
+                SeniorsTicketsPrice = Seniors * 8.50;
+                TotalTicketPrice = AdultsTicketsPrice + ChildrenTicketsPrice + SeniorsTicketsPrice;
                 //evening show popcorn promo//
                 if (TotalNumberTickets >= 3)
                 {
@@ -76,7 +76,11 @@ namespace MovieNight
                 Console.WriteLine("Large Soda $5.99");
                 Console.WriteLine("Hot Dog $3.99");
                 Console.WriteLine("Popcorn $4.50");
-                Console.WriteLine("Candy $1.99 - buy 3, get 1 free");
+                Console.WriteLine("Candy $1.99");
+                Console.WriteLine();
+                Console.WriteLine("Promotions: ");
+                Console.WriteLine("Purchase a large soda and popcorn for a $2 discount on your ticket price");
+                Console.WriteLine("Buy 3 packs of candy, get 1 free");
                 Console.WriteLine();
 
                 Console.Write("How many small sodas? ");
@@ -130,9 +134,9 @@ namespace MovieNight
                 {
                     Console.WriteLine("Evening");
                 }
-                Console.WriteLine("Adult tickets: " + Adults + " = $" + AdultsTickets);
-                Console.WriteLine("Child tickets: " + Children + " = $" + ChildrenTickets);
-                Console.WriteLine("Senior tickets: " + Seniors + " = $" + SeniorsTickets);
+                Console.WriteLine("Adult tickets: " + Adults + " = $" + AdultsTicketsPrice);
+                Console.WriteLine("Child tickets: " + Children + " = $" + ChildrenTicketsPrice);
+                Console.WriteLine("Senior tickets: " + Seniors + " = $" + SeniorsTicketsPrice);
                 Console.WriteLine();
                 Console.WriteLine("Snacks: ");
                 Console.WriteLine("Small Sodas: " + SmallSoda + " = $" + SmallSodaPrice);
