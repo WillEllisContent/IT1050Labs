@@ -47,10 +47,6 @@ namespace MovieNight
                 double SeniorsTickets = Seniors * 4.50;
                 TotalTicketPrice = AdultsTickets + ChildrenTickets + SeniorsTickets;
                 Console.WriteLine("Your total ticket price is $" + TotalTicketPrice);
-                if (TotalNumberTickets >= 3) ;
-                {
-                    Console.WriteLine("You get a free popcorn!");
-                }
             }
             else if (MovieType == 2)
             {
@@ -62,6 +58,7 @@ namespace MovieNight
                 if (TotalNumberTickets >= 3) ;
                 {
                     Console.WriteLine("You get a free popcorn!");
+                    FreePopcorn = 1;
                 }
 
             }
@@ -89,6 +86,11 @@ namespace MovieNight
                 int Popcorn = int.Parse(Console.ReadLine());
                 Console.WriteLine("How many packs of candy?");
                 int Candy = int.Parse(Console.ReadLine());
+
+                if (Popcorn >= 1 && LargeSoda >= 1)
+                {
+                    TotalTicketPrice = TotalTicketPrice - 2;
+                }
 
 // buy 3 candy get 1 free //
              
