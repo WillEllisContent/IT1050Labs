@@ -9,10 +9,12 @@ namespace Lab4
         public string LastName;
         public Person Spouse;
         public bool Married;
+        public int SpouseAge;
 
         public static Person Create(string Person)
         {
             Person person = new Person();
+            Console.WriteLine(Person);
             string FirstName = Question.AskForString("First Name");
             string LastName = Question.AskForString("Last Name");
             int Age = Question.AskForInteger("Age");
