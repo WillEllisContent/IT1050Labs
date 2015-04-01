@@ -10,12 +10,10 @@
             return _sumOfAllAges / _totalNumberOfPeople;
         }
 
-        public void AddPerson(Person NewPerson)
+        public void AddPerson(Person personAdd)
         {
-         int age = NewPerson.Age;
-         int spouseage = NewPerson.SpouseAge;
-        _sumOfAllAges = _sumOfAllAges + age;
-        _totalNumberOfPeople = _totalNumberOfPeople + 1;
+            _sumOfAllAges = _sumOfAllAges + personAdd.Age;
+            _totalNumberOfPeople = _totalNumberOfPeople + 1;
         }
     }
 }

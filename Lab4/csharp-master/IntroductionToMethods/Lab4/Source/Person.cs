@@ -9,22 +9,23 @@ namespace Lab4
         public string LastName;
         public Person Spouse;
         public bool Married;
-        public int SpouseAge;
+        
 
-        public static Person Create(string Person)
+        public static Person Create(string PersonNumber)
         {
             Person person = new Person();
-            Console.WriteLine(Person);
-            string FirstName = Question.AskForString("First Name");
-            string LastName = Question.AskForString("Last Name");
-            int Age = Question.AskForInteger("Age");
-            bool Married = Question.AskForBoolean("Married");
-            if (Married)
+            Question.SetPromptPrefix(PersonNumber);
+            person.FirstName = Question.AskForString("First Name");
+            person.LastName = Question.AskForString("Last Name");
+            person.Age = Question.AskForInteger("Age");
+            person.Married = Question.AskForBoolean("Married");
+            if (person.Married)
             {
                 Person Spouse = new Person();
-                string SpouseName = Question.AskForString("Spouse Name");
-                int SpouseAge = Question.AskForInteger("Spouse Age");
-
+                Spouse.FirstName = Question.AskForString("Spouse Name");
+                Spouse.Age = Question.AskForInteger("Spouse Age");
+                Spouse.LastName = person.LastName;
+                Spouse.Spouse = person;
             }
             Console.WriteLine();
             return person;
