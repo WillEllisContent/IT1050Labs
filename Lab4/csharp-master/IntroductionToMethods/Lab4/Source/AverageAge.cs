@@ -2,8 +2,8 @@
 {
     public class AverageAge
     {
-        private double _sumOfAllAges;
-        private int _totalNumberOfPeople;
+        public double _sumOfAllAges;
+        public double _totalNumberOfPeople;
 
         public double Get()
         {
@@ -14,6 +14,12 @@
         {
             _sumOfAllAges = _sumOfAllAges + personAdd.Age;
             _totalNumberOfPeople = _totalNumberOfPeople + 1;
+
+            if (personAdd.Married)
+            {
+              _totalNumberOfPeople = _totalNumberOfPeople + 1;
+              _sumOfAllAges = _sumOfAllAges + personAdd.Spouse.Age;
+            }
         }
     }
 }

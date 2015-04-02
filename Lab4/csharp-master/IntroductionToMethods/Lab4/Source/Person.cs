@@ -23,8 +23,9 @@ namespace Lab4
             {
                 Person Spouse = new Person();
                 Spouse.FirstName = Question.AskForString("Spouse Name");
-                Spouse.Age = Question.AskForInteger("Spouse Age");
                 Spouse.LastName = person.LastName;
+                Spouse.Age = Question.AskForInteger("Spouse Age");
+                Spouse.Married = true;
                 Spouse.Spouse = person;
             }
             Console.WriteLine();
