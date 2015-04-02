@@ -21,12 +21,9 @@ namespace Lab4
             person.Married = Question.AskForBoolean("Married");
             if (person.Married)
             {
-                Person Spouse = new Person();
-                Spouse.FirstName = Question.AskForString("Spouse Name");
-                Spouse.LastName = person.LastName;
-                Spouse.Age = Question.AskForInteger("Spouse Age");
-                Spouse.Married = true;
-                Spouse.Spouse = person;
+                person.Spouse = new Person();
+                person.Spouse.FirstName = Question.AskForString("Spouse Name");
+                person.Spouse.Age = Question.AskForInteger("Spouse Age");
             }
             Console.WriteLine();
             return person;
