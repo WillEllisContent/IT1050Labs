@@ -2,8 +2,8 @@
 {
     public class AverageAge
     {
-        public double _sumOfAllAges;
-        public double _totalNumberOfPeople;
+        private double _sumOfAllAges;
+        private double _totalNumberOfPeople;
 
         public double Get()
         {
