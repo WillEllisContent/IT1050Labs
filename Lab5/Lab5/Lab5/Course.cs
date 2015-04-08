@@ -10,6 +10,6 @@ namespace Lab5
     {
         public string CourseName;
         public int CourseNumber;
-        Student Student;
+        public Student[] Students;
     }
 }
