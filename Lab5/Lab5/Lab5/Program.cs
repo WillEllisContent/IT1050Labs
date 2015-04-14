@@ -29,11 +29,24 @@ namespace Lab5
                     Students[i] = new Student();
                     Console.Write("Student Name: ");
                     Students[i].StudentName = Console.ReadLine();
+                    Console.Write("Student ID#: ");
+                    Students[i].StudentNumber = int.Parse(Console.ReadLine());
                 }
 
-                Console.WriteLine(CourseName);
-                Console.WriteLine(CourseNumber);
-                Console.WriteLine(Students);
+                Console.WriteLine();
+                Console.WriteLine("Summary");
+                Console.WriteLine("Course Name: " + CourseName);
+                Console.WriteLine("Course Number: " + CourseNumber);
+                Console.WriteLine("Students:");
+
+                for (i = 0; i < StudentBase; i++)
+                {
+                    
+                    Console.WriteLine(Students[i].StudentName);
+                    Console.WriteLine(Students[i].StudentNumber);
+                }
+
+                Console.WriteLine();
                 Console.WriteLine("Is everything correct? Enter y or n");
                 Answer = Console.ReadLine();
              }
