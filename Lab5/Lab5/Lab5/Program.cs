@@ -41,9 +41,8 @@ namespace Lab5
 
                 for (i = 0; i < StudentBase; i++)
                 {
-                    
-                    Console.WriteLine(Students[i].StudentName);
-                    Console.WriteLine(Students[i].StudentNumber);
+
+                    Console.WriteLine(Students[i].StudentName + " , " + Students[i].StudentNumber);
                 }
 
                 Console.WriteLine();
