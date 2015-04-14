@@ -21,18 +21,19 @@ namespace Lab5
                 int CourseNumber = int.Parse(Console.ReadLine());
                 Console.WriteLine("How many students are taking the course");
                 int StudentBase = int.Parse(Console.ReadLine());
+                Student[] Students = new Student[StudentBase];
                 int i;
 
                 for (i = 0; i < StudentBase; i++)
                 {
-                    Student student = new Student();
+                    Students[i] = new Student();
                     Console.Write("Student Name: ");
-                    student.StudentName = Console.ReadLine();
-
+                    Students[i].StudentName = Console.ReadLine();
                 }
 
                 Console.WriteLine(CourseName);
                 Console.WriteLine(CourseNumber);
+                Console.WriteLine(Students);
                 Console.WriteLine("Is everything correct? Enter y or n");
                 Answer = Console.ReadLine();
              }
